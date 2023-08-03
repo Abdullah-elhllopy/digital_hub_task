@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <script src="./js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="content-container">
+
+
+        <header class="mb-4">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid px-md-3 px-0">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto align-items-center">
+                            <li class="nav-item">
+                                <img src="./assets/ci_1.png" width="80" height=80" alt="">
+                            </li>
+                            <li class="nav-item">
+                                <div class="vr"></div>
+                            </li>
+                            <li class="nav-item ">
+                                <img src="./assets/ci_2.png" width="75" height=75" alt="">
+                            </li>
+                            <li class="nav-item main_title">
+                                <a class="nav-link" href="#">الرئيسيه</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="input-group search-bar mr-0 mr-md-4 col-6 col-md-3">
+                        <div class="input-group-append">
+                            <img src="assets/vi_26.png" width="20" height=20" alt="">
+                        </div>
+                        <input class="form-control py-2" type="text" placeholder="استعلام عن حاله مواليد او وفاه"
+                            id="example-search-input">
+                    </div>
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/vi_27.png" width="44" height=44" alt="" />
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <div class="row information">
+            <div class="right_menu col-2 d-none d-md-block">
+                <div class="d-flex justify-content-between align-items-center" id="accordion">
+                    <div class="d-flex g-2 align-items-center">
+                        <img src="assets/vi_8.png" width="20" height="20" >
+                        <span>المواليد </span>
+                    </div>
+                    <img src="assets/upload.png" width="20" height="20" style="cursor: pointer;">
+                </div>
+                <div class="list">
+                    <span>تسجيل واقعة ميلاد</span>
+                    <span> تسجيل ساقط قيد ميلاد</span>
+                    <span>تسجيل ميلاد (معثور عليه)</span>
+                    <span>تسجيل ميلاد (ساقط قيد معثور
+                        (عليه)</span>
+                    <span>استعلام - تعديل واقعة الميلاد</span>
+                    <span>طلب تعديل واقعة ميلاد</span>
+                    <div class="vr-horizintal"></div>
+                </div>
+            </div>
+            <div class="content_data col-md-10 col-12  py-5 pl-5">
+                <div class="content_col">
+                    <div class="d-flex align-items-center  g-3">
+                        <div>
+                            <input id="checkIn" class="form-control" type="date" required>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center filter_btns">
+                            <div class="active">
+                                <span class="all"></span>
+                                الكل
+                            </div>
+                            <div>
+                                <span class="not-confident"></span>
+                                غير موثق
+                            </div>
+                            <div>
+                                <span class="confident"></span>
+                                موثق
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center  justify-content-between  people_data">
+                        <div class=" d-flex align-items-center">
+                            <img src="assets/vi_8.png" width="60" height="60" alt="">
+                            <div class="col-data">
+                                <h1>1000</h1>
+                                <p class="text-muted"> عدد المواليد المدخلين</p>
+                            </div>
+                        </div>
+                        <div class=" d-flex align-items-center">
+                            <img src="assets/vi_11.png" width="60" height="60" alt="">
+                            <div class="col-data">
+                                <h1>1000</h1>
+                                <p class="text-muted"> عدد الوفيات المدخلين</p>
+                            </div>
+                        </div>
+                        <div class=" d-flex align-items-center">
+                            <img src="assets/vi_14.png" width="60" height="60" alt="">
+                            <div class="col-data">
+                                <h1>1000</h1>
+                                <p class="text-muted"> طلبات تعديل مقدمة</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center calcultorSide">
+                        <div class="has_svg">
+                            <h2>النسبة بين الذكور والإناث للمواليد</h2>
+                            <div class="gender">
+                                <div>
+                                    <h2>اناث</h2>
+                                    <img src="./assets/female.svg" width="200" height="200" class="change-color" />
+                                    <h2 class="percentage">11%</h2>
+                                </div>
+                                <div>
+                                    <h2>ذكور</h2>
+                                    <img src="./assets/male.svg" width="200" height="200" />
+
+                                    <h2 class="percentage">90%</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vr-custom d-md-block d-none"></div>
+                        <div class="has_svg">
+                            <h2> النسبة بين الذكور والإناث للوفيات</h2>
+                            <div class="gender">
+                                <div>
+                                    <h2>اناث</h2>
+                                    <img src="./assets/female.svg" width="200" height="200" />
+                                    <h2 class="percentage">10%</h2>
+                                </div>
+                                <div>
+                                    <h2>ذكور</h2>
+                                    <img src="./assets/male.svg" width="200" height="200" />
+                                    <h2 class="percentage">90%</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
